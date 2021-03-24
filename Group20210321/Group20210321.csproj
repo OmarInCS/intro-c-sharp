@@ -49,6 +49,12 @@
     <Compile Include="week1\day3\AdditionQuiz.cs" />
     <Compile Include="week1\day3\ComputeSalaryV2.cs" />
     <Compile Include="week1\day3\DayChecker.cs" />
+    <Compile Include="week1\day4\CheckDay.cs" />
+    <Compile Include="week1\day4\Insurance.cs" />
+    <Compile Include="week1\day4\MobileCompany.cs" />
+    <Compile Include="week1\day4\PlateGenerator.cs" />
+    <Compile Include="week1\day4\StringBasics.cs" />
+    <Compile Include="week1\day4\TernaryOperator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
