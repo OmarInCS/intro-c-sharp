@@ -55,6 +55,10 @@
     <Compile Include="week1\day4\PlateGenerator.cs" />
     <Compile Include="week1\day4\StringBasics.cs" />
     <Compile Include="week1\day4\TernaryOperator.cs" />
+    <Compile Include="week2\day1\AdditionQuizV2.cs" />
+    <Compile Include="week2\day1\AdditionQuizV3.cs" />
+    <Compile Include="week2\day1\AdditionQuizV4.cs" />
+    <Compile Include="week2\day1\LoopBasics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
