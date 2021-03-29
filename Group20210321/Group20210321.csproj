@@ -59,6 +59,10 @@
     <Compile Include="week2\day1\AdditionQuizV3.cs" />
     <Compile Include="week2\day1\AdditionQuizV4.cs" />
     <Compile Include="week2\day1\LoopBasics.cs" />
+    <Compile Include="week2\day2\LoopBasics.cs" />
+    <Compile Include="week2\day2\MobileChecker.cs" />
+    <Compile Include="week2\day2\Palindrome.cs" />
+    <Compile Include="week2\day2\PasswordChecker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

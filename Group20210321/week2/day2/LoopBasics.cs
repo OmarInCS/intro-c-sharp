@@ -4,34 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Group20210321.week2.day1
+namespace Group20210321.week2.day2
 {
     class LoopBasics
     {
         //static void Main(string[] args)
         //{
-        //    int x = 1;
-        //    while (x <= 10)
-        //    {
-        //        Console.Write(x + " ");
-        //        x += 1;
-        //    }
-        //    Console.WriteLine();
-        //    Console.WriteLine("-----------------");
-
+        //   // break, continue
         //    for (int y = 10; y <= 100; y += 10)
         //    {
+        //        if (y == 50) break;
         //        Console.Write(y + " ");
         //    }
         //    Console.WriteLine();
         //    Console.WriteLine("-----------------");
-
-        //    int z = 10;
-        //    do
+            
+        //    for (int y = 10; y <= 100; y += 10)
         //    {
-        //        Console.Write(z + " ");
-        //        z += 10;
-        //    } while (z <= 100);
+        //        if (y == 50) continue;
+        //        Console.Write(y + " ");
+        //    }
         //    Console.WriteLine();
         //    Console.WriteLine("-----------------");
         //}
