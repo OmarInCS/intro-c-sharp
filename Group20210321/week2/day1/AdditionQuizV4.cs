@@ -8,24 +8,20 @@ namespace Group20210321.week2.day1
 {
     class AdditionQuizV4
     {
-        //static void Main(string[] args)
-        //{
+        //static void Main(string[] args) {
         //    Random rand = new Random();
         //    int score = 0;
-            
-        //    for (int i = 0; i < 5; i++)
-        //    {
+
+        //    for (int i = 0; i < 5; i++) {
         //        int x = rand.Next(0, 10);
         //        int y = rand.Next(0, 10);
         //        Console.Write($"What's {x} + {y} ? ");
         //        int answer = int.Parse(Console.ReadLine());
-        //        if (answer == x + y)
-        //        {
+        //        if (answer == x + y) {
         //            Console.WriteLine("Correct");
         //            score++;
         //        }
-        //        else
-        //        {
+        //        else {
         //            Console.WriteLine("Wrong");
         //        }
 
@@ -33,7 +29,7 @@ namespace Group20210321.week2.day1
         //    }
 
         //    Console.WriteLine("Score: " + score);
-            
+
         //}
     }
 }
