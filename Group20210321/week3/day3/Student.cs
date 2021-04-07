@@ -40,5 +40,9 @@ namespace Group20210321.week3.day3 {
             else if (pct >= 50) return "Pass";
             else return "Fail";
         }
+
+        public override String ToString() {
+            return $"Student: {name}, {mark}\n";
+        }
     }
 }

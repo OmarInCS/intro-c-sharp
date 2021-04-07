@@ -80,6 +80,9 @@
     <Compile Include="week3\day3\Student.cs" />
     <Compile Include="week3\day3\TestAccount.cs" />
     <Compile Include="week3\day3\TestStudent.cs" />
+    <Compile Include="week3\day4\Course.cs" />
+    <Compile Include="week3\day4\TestCourse.cs" />
+    <Compile Include="week3\day4\TestList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
