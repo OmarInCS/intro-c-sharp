@@ -83,6 +83,14 @@
     <Compile Include="week3\day4\Course.cs" />
     <Compile Include="week3\day4\TestCourse.cs" />
     <Compile Include="week3\day4\TestList.cs" />
+    <Compile Include="week4\day1\Account.cs" />
+    <Compile Include="week4\day1\CheckingAccount.cs" />
+    <Compile Include="week4\day1\Circle.cs" />
+    <Compile Include="week4\day1\Rectangle.cs" />
+    <Compile Include="week4\day1\SavingAccount.cs" />
+    <Compile Include="week4\day1\Shape.cs" />
+    <Compile Include="week4\day1\TestAccount.cs" />
+    <Compile Include="week4\day1\TestShape.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
