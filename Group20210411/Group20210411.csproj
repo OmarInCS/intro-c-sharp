@@ -60,6 +60,12 @@
     <Compile Include="day3\AssignGrades.cs" />
     <Compile Include="day3\CallMethods.cs" />
     <Compile Include="day3\MyMethods.cs" />
+    <Compile Include="day4\Employee.cs" />
+    <Compile Include="day4\Rectangle.cs" />
+    <Compile Include="day4\Student.cs" />
+    <Compile Include="day4\TestEmployee.cs" />
+    <Compile Include="day4\TestRectangle.cs" />
+    <Compile Include="day4\TestStudent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
