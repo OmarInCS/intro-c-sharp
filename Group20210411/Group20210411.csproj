@@ -66,6 +66,20 @@
     <Compile Include="day4\TestEmployee.cs" />
     <Compile Include="day4\TestRectangle.cs" />
     <Compile Include="day4\TestStudent.cs" />
+    <Compile Include="day5\Account.cs" />
+    <Compile Include="day5\CheckingAccount.cs" />
+    <Compile Include="day5\Circle.cs" />
+    <Compile Include="day5\Rectangle.cs" />
+    <Compile Include="day5\SavingAccount.cs" />
+    <Compile Include="day5\Shape.cs" />
+    <Compile Include="day5\TestAccount.cs" />
+    <Compile Include="day5\TestShapes.cs" />
+    <Compile Include="day6\Course.cs" />
+    <Compile Include="day6\DictBasics.cs" />
+    <Compile Include="day6\FileIO.cs" />
+    <Compile Include="day6\LetterCounter.cs" />
+    <Compile Include="day6\TestCourse.cs" />
+    <Compile Include="day6\TestList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

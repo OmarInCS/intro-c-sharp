@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Group20210411.day4 {
     class Employee {
+        #region other fields
         //private string name;
         public double salary;
         private int hireYear; // instance field
-
-        //private static int count;
-        public static int Count { get; private set; }
-
         public int HireYear {   // instance property
             get {
                 return hireYear;
@@ -25,13 +22,18 @@ namespace Group20210411.day4 {
         }
         public string Name { get; set; }
 
+        //private static int count;
+        #endregion
+        public int Count { get; private set; }
+
+        
         public Employee(string name, double salary, int hireYear) {
             this.Name = name;
             this.salary = salary;
             this.hireYear = hireYear;
             Count++;
         }
-
+        #region methods
         public double GetAnnualSalary() => salary * 12;
 
         //public double AnnualSalary {
@@ -43,5 +45,6 @@ namespace Group20210411.day4 {
         public double AnnualSalary => salary * 12;
 
         public int GetServicePeriod() => DateTime.Today.Year - hireYear;
+        #endregion
     }
 }

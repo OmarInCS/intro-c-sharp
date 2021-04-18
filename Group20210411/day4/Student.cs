@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Group20210411.day4 {
     class Student {
+        #region Properties
         public string Name { get; set; }
         public static int FullMark { get; set; } = 25;
 
@@ -18,7 +19,7 @@ namespace Group20210411.day4 {
                 }
             }
         }
-        
+        #endregion
         public Student(string name, double mark) {
             this.Name = name;
             this.Mark = mark;
