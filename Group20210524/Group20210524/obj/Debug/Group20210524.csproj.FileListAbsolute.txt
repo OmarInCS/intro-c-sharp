@@ -1,0 +1,7 @@
+D:\Abadnet\C#\Group20210524\Group20210524\Group20210524\bin\Debug\Group20210524.exe.config
+D:\Abadnet\C#\Group20210524\Group20210524\Group20210524\bin\Debug\Group20210524.exe
+D:\Abadnet\C#\Group20210524\Group20210524\Group20210524\bin\Debug\Group20210524.pdb
+D:\Abadnet\C#\Group20210524\Group20210524\Group20210524\obj\Debug\Group20210524.csprojAssemblyReference.cache
+D:\Abadnet\C#\Group20210524\Group20210524\Group20210524\obj\Debug\Group20210524.csproj.CoreCompileInputs.cache
+D:\Abadnet\C#\Group20210524\Group20210524\Group20210524\obj\Debug\Group20210524.exe
+D:\Abadnet\C#\Group20210524\Group20210524\Group20210524\obj\Debug\Group20210524.pdb
