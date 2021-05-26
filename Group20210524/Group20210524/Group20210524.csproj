@@ -47,9 +47,15 @@
     <Compile Include="week1\day1\ComputeSalary.cs" />
     <Compile Include="week1\day1\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="week1\day2\ComputeSalary.cs" />
+    <Compile Include="week1\day2\DayChecker.cs" />
+    <Compile Include="week1\day2\LoopBasics.cs" />
+    <Compile Include="week1\day2\MultQuiz.cs" />
+    <Compile Include="week1\day2\TernaryOperator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
