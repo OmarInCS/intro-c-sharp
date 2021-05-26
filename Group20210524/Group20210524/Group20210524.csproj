@@ -52,6 +52,9 @@
     <Compile Include="week1\day2\LoopBasics.cs" />
     <Compile Include="week1\day2\MultQuiz.cs" />
     <Compile Include="week1\day2\TernaryOperator.cs" />
+    <Compile Include="week1\day3\MultQuizV2.cs" />
+    <Compile Include="week1\day3\MultQuizV1.cs" />
+    <Compile Include="week1\day3\MultQuizV3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

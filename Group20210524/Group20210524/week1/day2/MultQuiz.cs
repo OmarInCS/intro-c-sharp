@@ -16,7 +16,7 @@ namespace Group20210524.week1.day2 {
         //    Console.WriteLine($"What's {x} * {y} ?");
         //    int answer = Convert.ToInt32(Console.ReadLine());
 
-        //    if (answer == x*y) {
+        //    if (answer == x * y) {
         //        Console.WriteLine("Correct");
         //    }
         //    else {
