@@ -55,6 +55,14 @@
     <Compile Include="week1\day3\MultQuizV2.cs" />
     <Compile Include="week1\day3\MultQuizV1.cs" />
     <Compile Include="week1\day3\MultQuizV3.cs" />
+    <Compile Include="week2\day1\NestedLoops.cs" />
+    <Compile Include="week2\day1\PasswordChecker.cs" />
+    <Compile Include="week2\day1\PrimePrinter.cs" />
+    <Compile Include="week2\day1\StringBasics.cs" />
+    <Compile Include="week2\day2\ArrayCopy.cs" />
+    <Compile Include="week2\day2\AssignGrades.cs" />
+    <Compile Include="week2\day2\CallMethods.cs" />
+    <Compile Include="week2\day2\MyMethods.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
