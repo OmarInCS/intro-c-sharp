@@ -63,6 +63,21 @@
     <Compile Include="week2\day2\AssignGrades.cs" />
     <Compile Include="week2\day2\CallMethods.cs" />
     <Compile Include="week2\day2\MyMethods.cs" />
+    <Compile Include="week2\day3\Patient.cs" />
+    <Compile Include="week2\day3\Rectangle.cs" />
+    <Compile Include="week2\day3\Student.cs" />
+    <Compile Include="week2\day3\TestPatient.cs" />
+    <Compile Include="week2\day3\TestRectangle.cs" />
+    <Compile Include="week2\day3\TestStudent.cs" />
+    <Compile Include="week2\day4\Account.cs" />
+    <Compile Include="week2\day4\Circle.cs" />
+    <Compile Include="week2\day4\Course.cs" />
+    <Compile Include="week2\day4\ListBasics.cs" />
+    <Compile Include="week2\day4\Rectangle.cs" />
+    <Compile Include="week2\day4\Shape.cs" />
+    <Compile Include="week2\day4\TestAccount.cs" />
+    <Compile Include="week2\day4\TestShapes.cs" />
+    <Compile Include="week2\day4\TestStudent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

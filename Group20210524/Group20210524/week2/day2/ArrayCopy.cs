@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Group20210524.week2.day2 {
     class ArrayCopy {
-        static void Main(string[] args) {
-            int[] x = { 10, 20, 30 };
-            //int[] y = x;
-            int[] y = (int[]) x.Clone();
+        //static void Main(string[] args) {
+        //    int[] x = { 10, 20, 30 };
+        //    //int[] y = x;
+        //    int[] y = (int[]) x.Clone();
 
-            y[1] += 3;
+        //    y[1] += 3;
 
-            PrintArray(x);
-            PrintArray(y);
-        }
+        //    PrintArray(x);
+        //    PrintArray(y);
+        //}
 
         static void PrintArray(int[] arr) {
             Console.Write("[ ");
