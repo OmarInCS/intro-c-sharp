@@ -43,11 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="day1\AnalyzeMarks.cs" />
+    <Compile Include="day1\CheckDay.cs" />
+    <Compile Include="day1\ComputePercentage.cs" />
+    <Compile Include="day1\ComputeSalary.cs" />
+    <Compile Include="day1\Program.cs" />
+    <Compile Include="day2\CheckDayV2.cs" />
+    <Compile Include="day2\LoopBasics.cs" />
+    <Compile Include="day2\Quiz.cs" />
+    <Compile Include="day2\QuizV4.cs" />
+    <Compile Include="day2\QuizV2.cs" />
+    <Compile Include="day2\QuizV3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="day1\Sketch.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
