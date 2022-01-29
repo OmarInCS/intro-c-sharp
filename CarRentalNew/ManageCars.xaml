@@ -1,0 +1,52 @@
+﻿<Window x:Class="CarRentalNew.ManageCars"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarRentalNew"
+        mc:Ignorable="d"
+        Title="إدارة السيارات" Height="600" Width="800" FontSize="16" FlowDirection="RightToLeft">
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="0.66*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btBack" Content="رجوع" HorizontalAlignment="Left" Margin="8,0,0,0" VerticalAlignment="Center" Width="75"/>
+        <Viewbox Margin="549,8,0,8" Grid.Row="2" Stretch="Fill">
+            <Grid Height="24.8" Width="235">
+                <Button x:Name="btDelete" Content="حذف" HorizontalAlignment="Left" Margin="160,0,0,-0.2" VerticalAlignment="Top" Width="75" Click="btDelete_Click"/>
+                <Button x:Name="btSave" Content="حفظ" HorizontalAlignment="Left" Margin="80,0,0,-0.2" VerticalAlignment="Top" Width="75" Click="btSave_Click"/>
+                <Button x:Name="btNew" Content="جديد" HorizontalAlignment="Right" Margin="0,0,160,-0.2" VerticalAlignment="Top" Width="75" Click="btNew_Click"/>
+            </Grid>
+        </Viewbox>
+        <DataGrid x:Name="dgCars" Grid.Row="3" SelectionChanged="dgCars_SelectionChanged"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="لوحة السيارة" HorizontalAlignment="Left" Margin="75,26,0,0" VerticalAlignment="Top"/>
+            <Label Content="نوع السيارة" HorizontalAlignment="Left" Margin="75,14.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Label Content="تاريخ الصنع" HorizontalAlignment="Left" Margin="75,16.6,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+            <Label Content="الأجرة" Grid.Column="2" HorizontalAlignment="Left" Margin="91.2,26,0,0" VerticalAlignment="Top"/>
+            <Label Content="اللون" Grid.Column="2" HorizontalAlignment="Left" Margin="108.2,20.8,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+            <Label Content="الموديل" Grid.Column="2" HorizontalAlignment="Left" Margin="91.2,25.6,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbRegNo" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="46.6,31,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="tbFees" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="43.8,30,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="tbColor" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="43.8,28.8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="tbModel" Grid.Column="3" HorizontalAlignment="Left" Height="23" Margin="43.8,25.6,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="tbName" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="29.6,18.8,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="tbMandate" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="46.6,25.6,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        </Grid>
+
+    </Grid>
+</Window>

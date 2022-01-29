@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CarrentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="accounts">
+          <Key>
+            <PropertyRef Name="account_id" />
+          </Key>
+          <Property Name="account_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="varchar" MaxLength="200" />
+          <Property Name="password" Type="nvarchar" MaxLength="200" />
+          <Property Name="name" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="mobile" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="type" Type="varchar" MaxLength="200" />
+          <Property Name="license_id" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="cars">
+          <Key>
+            <PropertyRef Name="reg_no" />
+          </Key>
+          <Property Name="reg_no" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="200" />
+          <Property Name="mandate" Type="int" />
+          <Property Name="fees" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="color" Type="varchar" MaxLength="200" />
+          <Property Name="model" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="hiring">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="start_date" Type="datetime" />
+          <Property Name="end_date" Type="datetime" />
+          <Property Name="total_amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="account_id" Type="int" />
+          <Property Name="car_id" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <Association Name="FK__hiring__account___29572725">
+          <End Role="accounts" Type="Self.accounts" Multiplicity="0..1" />
+          <End Role="hiring" Type="Self.hiring" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="accounts">
+              <PropertyRef Name="account_id" />
+            </Principal>
+            <Dependent Role="hiring">
+              <PropertyRef Name="account_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__hiring__car_id__2A4B4B5E">
+          <End Role="cars" Type="Self.cars" Multiplicity="0..1" />
+          <End Role="hiring" Type="Self.hiring" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cars">
+              <PropertyRef Name="reg_no" />
+            </Principal>
+            <Dependent Role="hiring">
+              <PropertyRef Name="car_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CarrentModelStoreContainer">
+          <EntitySet Name="accounts" EntityType="Self.accounts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cars" EntityType="Self.cars" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="hiring" EntityType="Self.hiring" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__hiring__account___29572725" Association="Self.FK__hiring__account___29572725">
+            <End Role="accounts" EntitySet="accounts" />
+            <End Role="hiring" EntitySet="hiring" />
+          </AssociationSet>
+          <AssociationSet Name="FK__hiring__car_id__2A4B4B5E" Association="Self.FK__hiring__car_id__2A4B4B5E">
+            <End Role="cars" EntitySet="cars" />
+            <End Role="hiring" EntitySet="hiring" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CarrentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="account">
+          <Key>
+            <PropertyRef Name="account_id" />
+          </Key>
+          <Property Name="account_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="mobile" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="type" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="license_id" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="hirings" Relationship="Self.FK__hiring__account___29572725" FromRole="accounts" ToRole="hiring" />
+        </EntityType>
+        <EntityType Name="car">
+          <Key>
+            <PropertyRef Name="reg_no" />
+          </Key>
+          <Property Name="reg_no" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="mandate" Type="Int32" />
+          <Property Name="fees" Type="Decimal" Precision="10" Scale="2" />
+          <Property Name="color" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="model" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="hirings" Relationship="Self.FK__hiring__car_id__2A4B4B5E" FromRole="cars" ToRole="hiring" />
+        </EntityType>
+        <EntityType Name="hiring">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="start_date" Type="DateTime" Precision="3" />
+          <Property Name="end_date" Type="DateTime" Precision="3" />
+          <Property Name="total_amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="account_id" Type="Int32" />
+          <Property Name="car_id" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="account" Relationship="Self.FK__hiring__account___29572725" FromRole="hiring" ToRole="accounts" />
+          <NavigationProperty Name="car" Relationship="Self.FK__hiring__car_id__2A4B4B5E" FromRole="hiring" ToRole="cars" />
+        </EntityType>
+        <Association Name="FK__hiring__account___29572725">
+          <End Role="accounts" Type="Self.account" Multiplicity="0..1" />
+          <End Role="hiring" Type="Self.hiring" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="accounts">
+              <PropertyRef Name="account_id" />
+            </Principal>
+            <Dependent Role="hiring">
+              <PropertyRef Name="account_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__hiring__car_id__2A4B4B5E">
+          <End Role="cars" Type="Self.car" Multiplicity="0..1" />
+          <End Role="hiring" Type="Self.hiring" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cars">
+              <PropertyRef Name="reg_no" />
+            </Principal>
+            <Dependent Role="hiring">
+              <PropertyRef Name="car_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CarrentEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="accounts" EntityType="Self.account" />
+          <EntitySet Name="cars" EntityType="Self.car" />
+          <EntitySet Name="hirings" EntityType="Self.hiring" />
+          <AssociationSet Name="FK__hiring__account___29572725" Association="Self.FK__hiring__account___29572725">
+            <End Role="accounts" EntitySet="accounts" />
+            <End Role="hiring" EntitySet="hirings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__hiring__car_id__2A4B4B5E" Association="Self.FK__hiring__car_id__2A4B4B5E">
+            <End Role="cars" EntitySet="cars" />
+            <End Role="hiring" EntitySet="hirings" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CarrentModelStoreContainer" CdmEntityContainer="CarrentEntities">
+          <EntitySetMapping Name="accounts">
+            <EntityTypeMapping TypeName="CarrentModel.account">
+              <MappingFragment StoreEntitySet="accounts">
+                <ScalarProperty Name="account_id" ColumnName="account_id" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="license_id" ColumnName="license_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cars">
+            <EntityTypeMapping TypeName="CarrentModel.car">
+              <MappingFragment StoreEntitySet="cars">
+                <ScalarProperty Name="reg_no" ColumnName="reg_no" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="mandate" ColumnName="mandate" />
+                <ScalarProperty Name="fees" ColumnName="fees" />
+                <ScalarProperty Name="color" ColumnName="color" />
+                <ScalarProperty Name="model" ColumnName="model" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="hirings">
+            <EntityTypeMapping TypeName="CarrentModel.hiring">
+              <MappingFragment StoreEntitySet="hiring">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="start_date" ColumnName="start_date" />
+                <ScalarProperty Name="end_date" ColumnName="end_date" />
+                <ScalarProperty Name="total_amount" ColumnName="total_amount" />
+                <ScalarProperty Name="account_id" ColumnName="account_id" />
+                <ScalarProperty Name="car_id" ColumnName="car_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

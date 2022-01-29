@@ -48,10 +48,45 @@
     <Compile Include="day1\PCTCalculator.cs" />
     <Compile Include="day1\Program.cs" />
     <Compile Include="day1\SalaryComputer.cs" />
+    <Compile Include="day2\GuessGame.cs" />
+    <Compile Include="day2\LoobBasics.cs" />
+    <Compile Include="day2\QuizV1.cs" />
+    <Compile Include="day2\QuizV2.cs" />
+    <Compile Include="day3\CallMethods.cs" />
+    <Compile Include="day3\MyMethods.cs" />
+    <Compile Include="day3\NestedLoops.cs" />
+    <Compile Include="day3\PasswordChecker.cs" />
+    <Compile Include="day3\PrintPrimes.cs" />
+    <Compile Include="day3\StringBasics.cs" />
+    <Compile Include="day4\ArrayCopy.cs" />
+    <Compile Include="day4\AssignGrades.cs" />
+    <Compile Include="day5\ObjectCopy.cs" />
+    <Compile Include="day5\Patient.cs" />
+    <Compile Include="day5\Rectangle.cs" />
+    <Compile Include="day5\Student.cs" />
+    <Compile Include="day5\TestPatient.cs" />
+    <Compile Include="day5\TestRectangle.cs" />
+    <Compile Include="day5\TestStudent.cs" />
+    <Compile Include="day6\Account.cs" />
+    <Compile Include="day6\Course.cs" />
+    <Compile Include="day6\DictBasics.cs" />
+    <Compile Include="day6\ListBasics.cs" />
+    <Compile Include="day6\TestAccount.cs" />
+    <Compile Include="day6\TestCourse.cs" />
+    <Compile Include="day7\CheckingAccount.cs" />
+    <Compile Include="day7\Employee.cs" />
+    <Compile Include="day7\HandleExceptions.cs" />
+    <Compile Include="day7\FileRW.cs" />
+    <Compile Include="day7\SalesPerson.cs" />
+    <Compile Include="day7\SavingAccount.cs" />
+    <Compile Include="day7\TestAccounts.cs" />
+    <Compile Include="day7\TestEmployees.cs" />
+    <Compile Include="day7\Trainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
