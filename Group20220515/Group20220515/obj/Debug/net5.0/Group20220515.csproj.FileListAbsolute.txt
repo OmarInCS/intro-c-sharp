@@ -1,0 +1,16 @@
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\bin\Debug\net5.0\Group20220515.exe
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\bin\Debug\net5.0\Group20220515.deps.json
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\bin\Debug\net5.0\Group20220515.runtimeconfig.json
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\bin\Debug\net5.0\Group20220515.runtimeconfig.dev.json
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\bin\Debug\net5.0\Group20220515.dll
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\bin\Debug\net5.0\ref\Group20220515.dll
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\bin\Debug\net5.0\Group20220515.pdb
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\obj\Debug\net5.0\Group20220515.csprojAssemblyReference.cache
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\obj\Debug\net5.0\Group20220515.GeneratedMSBuildEditorConfig.editorconfig
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\obj\Debug\net5.0\Group20220515.AssemblyInfoInputs.cache
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\obj\Debug\net5.0\Group20220515.AssemblyInfo.cs
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\obj\Debug\net5.0\Group20220515.csproj.CoreCompileInputs.cache
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\obj\Debug\net5.0\Group20220515.dll
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\obj\Debug\net5.0\ref\Group20220515.dll
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\obj\Debug\net5.0\Group20220515.pdb
+D:\Abadnet\C#\Group20220515\Group20220515\Group20220515\obj\Debug\net5.0\Group20220515.genruntimeconfig.cache
