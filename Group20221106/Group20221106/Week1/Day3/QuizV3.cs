@@ -1,13 +1,13 @@
 ﻿
-Random rand = new Random();
+//Random rand = new Random();
 
-int x, y, answer;
+//int x, y, answer;
 
-do {
-    x = rand.Next(0, 10);
-    y = rand.Next(0, 10);
-    Console.Write($"What's {x} * {y} ? ");
-    answer = int.Parse(Console.ReadLine());
-} while (answer == x * y);
+//do {
+//    x = rand.Next(0, 10);
+//    y = rand.Next(0, 10);
+//    Console.Write($"What's {x} * {y} ? ");
+//    answer = int.Parse(Console.ReadLine());
+//} while (answer == x * y);
 
-Console.WriteLine("Game Over!!");
+//Console.WriteLine("Game Over!!");
